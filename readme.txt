@@ -104,6 +104,11 @@ The difference is that with Origin Pull the files are pulled from your web host 
 
 == CHANGELOG ==
 
+= 1.9 =
+
+* [02/03/2011 - 09:27] Added admin bar menu.
+* [25/02/2011 - 08:03] Fixed debug messages being written to error log when WP_DEBUG != true
+
 = 1.8 =
 * [14/2/2011 - 15:00] Fixed Smushit and GD compression turnning boolean/null values instead of the fileArray.
 * [14/2/2011 - 16:20] Added test case to check non images are being sync'd properly.
