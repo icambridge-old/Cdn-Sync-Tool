@@ -143,6 +143,7 @@ class Cst_Page_Main extends Cst_Page {
 				
 				$cdn["provider"]   = $_POST["cdn_provider"];
 				$cdn["hotlinking"] = $_POST["cdn_hotlinking"];
+				$cdn["absolute"] = $_POST["cdn_absolute"];
 				$cdn["hostname"]   = $cdnUrl;
 				if ( $cdn["provider"] == "aws"){
 					$cdn["access"]      = $_POST['aws_access'];
