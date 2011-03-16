@@ -37,7 +37,7 @@ class Cst_Plugin_Site {
 		
 		global $blog_id;
 		
-		return preg_replace("~=[\'\"](http://.*/)files/(.*)[\'\"]~isU", "<img src=\"$1/blogs.dir/".$blog_id."/files/$2\"",$html);
+		return preg_replace("~=[\'\"](http://.*/)files/(.*)[\'\"]~isU", "<img src=\"$1/wp-content/blogs.dir/".$blog_id."/files/$2\"",$html);
 		
 	}
 	
