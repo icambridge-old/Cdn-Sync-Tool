@@ -155,6 +155,7 @@ class Cst_Page_Main extends Cst_Page {
 					$cdn["username"]  = $_POST["cf_username"];
 					$cdn["apikey"]    = $_POST["cf_apikey"];
 					$cdn["container"] = $_POST["cf_container"];	
+					$cdn["authurl"] = $_POST["cf_authurl"];	
 				} elseif ( $cdn["provider"] == "ftp" ){
 					$cdn["username"]  = $_POST["ftp_username"];
 					$cdn["password"]  = $_POST["ftp_password"];

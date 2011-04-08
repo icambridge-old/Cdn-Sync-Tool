@@ -163,6 +163,17 @@ $disabled = "";
 											<tr class="cf_details">
 												<td colspan="2">The CloudFiles container name.</td>
 											</tr>
+											<tr class="cf_details">
+												<th scope="row">Account Location</th>
+												<td>
+													<input type="radio" name="cf_authurl" value="UK_AUTHURL" <?php if ((isset($cdn) && is_array($cdn) ) && (isset($cdn["provider"]) && $cdn["provider"] == "cf") && (isset($cdn["authurl"]) && $cdn['authurl'] == "UK_AUTHURL")){?> checked="yes"<?php } ?> id="cf_authurl_uk" />
+													<label for="cf_authurl_uk">UK</label>
+													<input type="radio" name="cf_authurl" value="US_AUTHURL" <?php if ((isset($cdn) && is_array($cdn) ) && (isset($cdn["provider"]) && $cdn["provider"] == "cf") && (!isset($cdn["authurl"]) || $cdn['authurl'] == "US_AUTHURL")){?> checked="yes"<?php } ?> id="cf_authurl_us" />
+													<label for="cf_authurl_us">US</label></td>
+											</tr>
+											<tr class="cf_details">
+												<td colspan="2">The location of your account. If you don't know what this option is just select US if it doesn't work then use the UK.</td>
+											</tr>
 											<tr class="ftp_details">
 												<th scope="row">Username</th>
 												<td><input type="text" name="ftp_username" value="<?php if ((isset($cdn) && is_array($cdn) ) &&(isset($cdn["provider"]) || $cdn["provider"] == "ftp") && isset($cdn["username"])){ echo $cdn["username"]; } ?>" /></td>
